@@ -128,6 +128,7 @@ align-items: center;
 
 
 .menu {
+ 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -137,9 +138,10 @@ align-items: center;
   align-items: center;
   transition: color var(--transition-duration-and-func);
   position: relative;
+  padding: 24px 0;
 }
 .current {
-   background-color: var(--focuc);
+   color: var(--focuc);
    
   
 }
@@ -147,11 +149,15 @@ align-items: center;
   content: '';
   display: block;
   position: absolute;
- width: 100%;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
+  background-color: var(--focuc);
+ 
+  
+
 }
 
 
