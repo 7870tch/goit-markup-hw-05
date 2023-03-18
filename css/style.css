@@ -39,6 +39,7 @@
 
 .link {
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .button, .btn {
@@ -71,6 +72,7 @@ color: #2E2F42;
 .address {
   margin-left: auto;
   margin-right: 40px;
+
 }
 
 
@@ -83,7 +85,7 @@ color: #2E2F42;
   color:var(--color-title);
   margin-right: 40px;
   transition: color var(--transition-duration-and-func);
-  
+  display: inline-block;
 }
 .tel .mail:hover,
 .tel .mail:focus {
@@ -118,7 +120,6 @@ align-items: center;
 }
 .page-header {
   padding-top: 24px;
-  padding-bottom: 24px;
   border: 1px solid #E7E9FC;
 }
 .menu-item:not(:last-child){
@@ -138,10 +139,11 @@ align-items: center;
   align-items: center;
   transition: color var(--transition-duration-and-func);
   position: relative;
-  padding: 24px 0;
+  
 }
 .current {
    color: var(--focuc);
+   
    
   
 }
@@ -155,7 +157,7 @@ align-items: center;
   bottom: -1px;
   left: 0;
   background-color: var(--focuc);
- 
+
   
 
 }
