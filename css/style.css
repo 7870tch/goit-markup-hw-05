@@ -6,7 +6,16 @@
   --color-title: #2E2F42;
   --focuc: #404BBF;
   --text400: #434455;
+  --header-background-col:#E7E9FC;
   --button-normal:#E7E9FC;
+  --logo:#4D5AE5;
+  --logo-two: #2E2F42;
+  --active-link:#4D5AE5;
+  --hero-h:#FFFFFF;
+  --text-button:#ffffff;
+  --background-button:#4D5AE5;
+  --background-icon:#F4F4FD;
+  --background-team:#F4F4FD;
   --transition-duration-and-func:250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
@@ -29,7 +38,7 @@
 
  body {
    font-family: var(--primary-font);
-   color: #2E2F42;
+   color: var(--color-title);
  }
  img {
   display: block;
@@ -88,7 +97,7 @@
   font-family: var(--secondary-font);
   line-height: 1.3;
   letter-spacing: 0.03em;
-  color:#4D5AE5;
+  color: var(--logo);
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -99,7 +108,7 @@
   
 
 .accent {
-  color: #2E2F42;
+  color: var(--logo-two);
 }
 
 
@@ -116,7 +125,7 @@ justify-content: space-between;
 }
 .page-header {
   
-  border: 1px solid #E7E9FC;
+  border: 1px solid var(--header-background-col);
 }
 
 .menu {
@@ -150,8 +159,6 @@ justify-content: space-between;
   left: 0;
   background-color: var(--focuc);
 
-  
-
 }
 
 
@@ -165,7 +172,7 @@ justify-content: space-between;
 }
 
 .active {
-  color: #4D5AE5;
+  color: var(--active-link);
 }
 /*-------------------HERO------------------*/
 .hero {
@@ -184,7 +191,7 @@ max-width: 1440px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--hero-h);
   margin-bottom: 48px;
   max-width: 496px;
   margin-right: auto;
@@ -198,8 +205,8 @@ max-width: 1440px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color:#ffffff;
-    background-color: #4D5AE5;
+    color: var(--text-button);
+    background-color: var(--background-button);
 
 }
 
@@ -219,19 +226,19 @@ max-width: 1440px;
 .modal-btn:hover,
 .modal-btn:focus {
 background-color: var(--focuc);
-color: #ffffff;
+color: var(--text-button);
 }
 /*----------------------------PORTFOLIO HERO---------------*/
 .button,
 .modal-button {
-  color: #4D5AE5;
+  color: var(--background-button);
   background-color: var(--button-normal);
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 24px;
   border-radius: 4px;
-border: 1px solid #E7E9FC;
+border: 1px solid var(--button-normal);
 
 }
 .button-list {
@@ -248,11 +255,11 @@ min-width: auto;
 .modal-button:hover,
 .button,
 .modal-button:focus {
-  color: #ffffff;
+  color: var(--button-normal);
   background-color: var(--focuc);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/*----------------------------MAin Page---------------*/
+/*----------------------------Advantages Section---------------*/
 .title-item { 
   font-weight: 500;
     font-size: 20px;
@@ -280,30 +287,33 @@ min-width: auto;
   
 }
 
-.main-content-section {
+.advantages {
   display: flex;
 
 }
-.content-title-main-page {
+.content-title-advantages {
   display: none;
 }
-.section-main {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
-.main-list-item {
+
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 264px;
   height: 112px;
-  background-color: #F4F4FD;
+  background-color: var(--background-icon);
   border-radius: 4px;
   margin-bottom: 8px;
+
  
 }
- /*----------------SECTION TWO--------------------*/ 
+
+.main-list-item {
+  flex-basis: calc((100%-72px)/5);
+  
+}
+ /*----------------SECTION CONTENT WORK--------------------*/ 
 .content-title {
   font-weight: 700;
   font-size: 36px;
@@ -320,12 +330,10 @@ min-width: auto;
   flex-basis:calc(100%-48px)/3;
 }
 
-.content-section {
-  padding-bottom: 120px;
-}
-/*------------------SECTION THREE----------------*/
-.staff-section {
-  background-color: #F4F4FD;
+
+/*------------------SECTION TEAM----------------*/
+.team {
+  background-color: var(--background-team);
 }
 .name-title {
   font-weight: 500;
@@ -448,9 +456,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 
-.customers-section {
-  padding-top: 130px;
-}
+
 .company-list {
   display: flex;
   justify-content: center;
