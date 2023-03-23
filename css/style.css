@@ -27,53 +27,42 @@
   padding-left: 0;
  }
 
+ body {
+   font-family: var(--primary-font);
+   color: #2E2F42;
+ }
  img {
   display: block;
   max-width: 100%;
   height: auto;
  }
 
-.list {
-  list-style: none;
-}
-
 .link {
   text-decoration: none;
-  padding-bottom: 20px;
+ 
 }
 
 .button, .btn {
   cursor: pointer;
 }
 
-.body {
-font-family: var(--primary-font);
-color: #2E2F42;
-}
-
-
-
 .list {
+  list-style: none;
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
 }
-
+.section{
+  padding: 120px 0;
+}
 
 /*==================HEADER================*/
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  
-  
-
 }
-.address {
-  margin-left: auto;
-  margin-right: 40px;
 
-}
 
 
 .tel, .mail {
@@ -83,9 +72,13 @@ color: #2E2F42;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:var(--color-title);
-  margin-right: 40px;
+  
   transition: color var(--transition-duration-and-func);
-  display: inline-block;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 40px;
+  
 }
 .tel .mail:hover,
 .tel .mail:focus {
@@ -100,6 +93,8 @@ color: #2E2F42;
   display: flex;
   align-items: center;
   margin-right: 76px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
   
 
@@ -112,6 +107,7 @@ color: #2E2F42;
 .page-header-container {
 display: flex ;
 align-items: center;
+justify-content: space-between;
 }
 
 .page-nav {
@@ -119,14 +115,9 @@ align-items: center;
   align-items: center;
 }
 .page-header {
-  padding-top: 24px;
+  
   border: 1px solid #E7E9FC;
 }
-.menu-item:not(:last-child){
-  margin-right: 40px;
-}
-
-
 
 .menu {
  
@@ -139,13 +130,14 @@ align-items: center;
   align-items: center;
   transition: color var(--transition-duration-and-func);
   position: relative;
-  
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 40px;
 }
+
 .current {
    color: var(--focuc);
-   
-   
-  
+
 }
 .current::after {
   content: '';
@@ -181,6 +173,7 @@ align-items: center;
 margin-left: auto;
 margin-right: auto;
 padding-bottom:188px ;
+padding-top: 188px;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
 background-size: cover;
 max-width: 1440px;
@@ -192,7 +185,6 @@ max-width: 1440px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-  padding-top: 188px;
   margin-bottom: 48px;
   max-width: 496px;
   margin-right: auto;
